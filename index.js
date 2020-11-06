@@ -18,7 +18,7 @@ const app = express();
 app.get('/', (req, res) => {
   console.log('Hello world received a request.');
 
-  const target = process.env.TARGET || 'World';
+  const target = process.env.TARGET || 'MAP Class';
   res.send(`Hello ${target}!, it seems GH and GCP integrated with Github Actions and Workflow`);
 });
 
