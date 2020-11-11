@@ -18,8 +18,13 @@ const app = express();
 app.get('/', (req, res) => {
   console.log('Hello world received a request.');
 
+<<<<<<< HEAD
   const target = process.env.TARGET || 'World';
   res.send(`Hello ${target}!, it seems GH and GCP integrated with Github Actions and Workflow on Nov 11`);
+=======
+  const target = process.env.TARGET || 'MAP Class';
+  res.send(`Hello ${target}!, it seems GH and GCP integrated with Github Actions and Workflow`);
+>>>>>>> 6a79479e68bdaa44bdee325c1d8caf60841cdb80
 });
 
 const port = process.env.PORT || 8080;
